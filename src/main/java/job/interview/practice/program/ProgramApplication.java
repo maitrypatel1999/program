@@ -29,9 +29,14 @@ public class ProgramApplication {
 //      System.out.println(programApplication.findOddOrEvenWithstreamPresentnumDivisibleby5(Stream.of(1, 25, 50, 507, 357, 49, 32, 12)));
 //      System.out.println(programApplication.createListsDiffWays());
 //      System.out.println(programApplication.createStreamsDiffWays());
-      System.out.println(programApplication.findSumOddOrEvenWithstreamPresentnumDivisibleby5Or7(Stream.of(1, 25, 50, 35, 49, 32, 12)));
-
+//      System.out.println(programApplication.findSumOddOrEvenWithstreamPresentnumDivisibleby5Or7(Stream.of(1, 25, 50, 35, 49, 32, 12)));
+        System.out.println(programApplication.findNameStartsWithP(List.of("Patel", "Patil", "Desai")));
     }
+
+    private List<String> findNameStartsWithP(List<String> names) {
+        return names.stream().filter(name -> name.startsWith("P")).collect(Collectors.toList());
+    }
+
 
     private int findSumOddOrEvenWithstreamPresentnumDivisibleby5Or7(Stream<Integer> integerStream) {
         // sum of number divisible by 5 0r 7
