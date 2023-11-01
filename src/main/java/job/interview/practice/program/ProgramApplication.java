@@ -34,7 +34,7 @@ public class ProgramApplication {
     }
 
     private List<String> findNameStartsWithP(List<String> names) {
-        return names.stream().filter(name ->  name.startsWith("P")).collect(Collectors.toList());
+        return names.stream().filter(name ->   name.startsWith("P")).collect(Collectors.toList());
     }
 
 
