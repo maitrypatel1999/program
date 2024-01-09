@@ -12,7 +12,8 @@ import java.util.List;
 
 @RestController
 @Validated
-@RequestMapping("/person")
+@RequestMapping("/api/person")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequiredArgsConstructor
 public class PersonController {
 
@@ -38,9 +39,9 @@ public class PersonController {
         return personService.createPerson(newPerson);
     }
 
-    @PutMapping("")
-    Person updateOrCreatePerson(@RequestBody Person newPerson) {
-        return personService.updateOrCreatePerson(newPerson);
+    @PutMapping("/{id}")
+    Person updateOrCreatePerson(@PathVariable Long id, @RequestBody Person newPerson) {
+        return personService.updateOrCreatePerson(id, newPerson);
     }
 
     @DeleteMapping("/{id}")

@@ -34,10 +34,10 @@ public class App  implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-//    personRepository.save(new Person(null, "Roshan", "Patel", "228 Wellington Pl, Edison, NJ 08817", "732-325-8298" ));
-//    personRepository.save(new Person(null, "Maitry", "Patel", "20 Indian Ln, Burlngton, NJ 08016", "732-111-2222" ));
-//    personRepository.save(new Person(null, "Rupak", "Trivedi", "228 Wellington Pl, Edison, NJ 08817", "732-325-8298" ));
-//    personRepository.save(new Person(null, "Moksha", "Kahodariya", "20 Indian Ln, Burlngton, NJ 08016", "732-111-2222" ));
+    personRepository.save(new Person(null, "Roshan", "Patel", "228 Wellington Pl, Edison, NJ 08817", "732-325-8298" ));
+    personRepository.save(new Person(null, "Maitry", "Patel", "20 Indian Ln, Burlngton, NJ 08016", "732-111-2222" ));
+    personRepository.save(new Person(null, "Rupak", "Trivedi", "228 Wellington Pl, Edison, NJ 08817", "732-325-8298" ));
+    personRepository.save(new Person(null, "Moksha", "Kahodariya", "20 Indian Ln, Burlngton, NJ 08016", "732-111-2222" ));
 //
 //    employeeRepository.save(new Employee(null, "Roshan", "228 Wellington Pl, Edison, NJ 08817", "732-325-8298", "SALES", 100000D ));
 //    employeeRepository.save(new Employee(null, "Maitry", "20 Indian Ln, Burlngton, NJ 08016", "732-111-2222", "ACCOUNTING", 120000D ));

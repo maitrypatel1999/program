@@ -13,7 +13,7 @@ import java.util.List;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/api/tutorials")
 @RequiredArgsConstructor
-public class TutorialsController {
+public class  TutorialsController {
 
     private final TutorialService tutorialService;
 

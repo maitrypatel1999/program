@@ -36,8 +36,8 @@ public class PersonService {
         personRepository.deleteById(id);
     }
 
-    public Person updateOrCreatePerson(Person newPerson) {
-        return personRepository.findById(newPerson.getId())
+    public Person updateOrCreatePerson(Long id, Person newPerson) {
+        return personRepository.findById(id)
                 .map(person -> {
                     person.setFirstName(newPerson.getFirstName());
                     person.setLastName((newPerson.getLastName()));
@@ -46,6 +46,7 @@ public class PersonService {
                     return personRepository.save(person);
                 })
                 .orElseGet(() -> {
+                    newPerson.setId(id);
                     return personRepository.save(newPerson);
                 });
     }
